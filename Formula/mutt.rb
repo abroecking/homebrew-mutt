@@ -62,12 +62,14 @@ class Mutt < Formula
     patch do
       url "http://ftp.fr.openbsd.org/pub/OpenBSD/distfiles/mutt/sidebar-1.6.0.diff.gz"
       sha256 "63b6b28d7008b6d52bd98151547b052251cd4bc87e467e47ffebe372dfe7155b"
+    end
   end
 
   if build.with? "trash-patch"
     patch do
      url "http://ftp.fr.openbsd.org/pub/OpenBSD/distfiles/mutt/trashfolder-1.6.0.diff.gz"
      sha256 "b779c6df61a77f3069139aad8562b4a47c8eed8ab5b8f5681742a1c2eaa190b8"
+    end
   end 
 
   # original source for this went missing, patch sourced from Arch at
@@ -76,12 +78,14 @@ class Mutt < Formula
     patch do
      url "https://gist.githubusercontent.com/mistydemeo/5522742/raw/1439cc157ab673dc8061784829eea267cd736624/ignore-thread-1.5.21.patch"
      sha1 "dbcf5de46a559bca425028a18da0a63d34f722d3"
+    end
   end 
 
   if build.with? "pgp-verbose-mime-patch"
    patch do
      url "http://patch-tracker.debian.org/patch/series/dl/mutt/1.5.21-6.2+deb7u1/features-old/patch-1.5.4.vk.pgp_verbose_mime"
      sha1 "a436f967aa46663cfc9b8933a6499ca165ec0a21"
+    end
    end 
 
   def install
