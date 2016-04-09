@@ -80,13 +80,6 @@ class Mutt < Formula
     end
   end 
 
-  if build.with? "pgp-verbose-mime-patch"
-   patch do
-     url "http://patch-tracker.debian.org/patch/series/dl/mutt/1.5.21-6.2+deb7u1/features-old/patch-1.5.4.vk.pgp_verbose_mime"
-     sha1 "a436f967aa46663cfc9b8933a6499ca165ec0a21"
-    end
-   end 
-
   def install
     user_admin = Etc.getgrnam("admin").mem.include?(ENV["USER"])
 
